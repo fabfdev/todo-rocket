@@ -51,6 +51,9 @@ jobs:
               env:
                 GOOGLE_SERVICES_64: ${{ secrets.EAS_GOOGLE_PLAY_API }}
 
+            - name: Install Dependencies
+              run: npm install
+
             - name: Build and Submit
               run: eas build --platform android --profile production --non-interactive --no-wait
               env:
