@@ -23,15 +23,21 @@ module.exports = {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0D0D0D"
       },
-      "package": "com.dfapphub.todorocket"
+      "package": "br.com.felipealexandre012.todorocket"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": process.env.EAS_PROJECT_ID
+        "projectId": "1be46963-2d60-42c2-8e87-49d48d9e8f71"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1be46963-2d60-42c2-8e87-49d48d9e8f71"
     }
   }
 }

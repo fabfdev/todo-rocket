@@ -50,3 +50,7 @@ jobs:
                 base64 -d -i google-services.json.b64 > google-services.json
               env:
                 GOOGLE_SERVICES_64: ${{ secrets.EAS_GOOGLE_PLAY_API }}
+
+            - name: Build and Submit
+              run: eas build --platform android --profile production --non-interactive --no-wait
+              
